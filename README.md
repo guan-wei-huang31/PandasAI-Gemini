@@ -36,36 +36,36 @@ It allows users to query pandas DataFrames using natural language, enabling inst
 Python 3.11
 
 1. **Clone the Repository:**
-   ```bash
-  git clone https://github.com/your-username/PandasAI-Gemini.git
-   ```
+	```bash
+		git clone https://github.com/your-username/PandasAI-Gemini.git
+	```
 
 2. **Set Up a Python Environment:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+	```bash
+		python -m venv venv
+		source venv/bin/activate  # On Windows: venv\Scripts\activate
+	```
 
 3. **Install Required Libraries:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+	```bash
+		pip install -r requirements.txt
+	```
 
 4. **Set Environment Variables:**
 	Create a .env file in the project root and add your API key:
-   ```env
-   GOOGLE_API_KEY=your_api_key_here
-   ```
+	```env
+		GOOGLE_API_KEY=your_api_key_here
+	```
    
 5. **Run the Project**
 
 ## Demo
 	```python
-	try:
-		result = sdf.chat("plot Gender_num ( 0 is Male, 1 is Female) ")
-		print("Answer:", result)
-	except Exception as e:
-		print("PandasAI crash:", e)
+		try:
+			result = sdf.chat("plot Gender_num ( 0 is Male, 1 is Female) ")
+			print("Answer:", result)
+		except Exception as e:
+			print("PandasAI crash:", e)
 	```
 ![Chart](figure/temp_chart.png)
 
