@@ -60,6 +60,13 @@ Python 3.11
 5. **Run the Project**
 
 ## Demo
+	```python
+	try:
+		result = sdf.chat("plot Gender_num ( 0 is Male, 1 is Female) ")
+		print("Answer:", result)
+	except Exception as e:
+		print("PandasAI crash:", e)
+	```
 ![Chart](figure/temp_chart.png)
 
 ## Project Structure
